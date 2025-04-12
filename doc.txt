@@ -10,7 +10,7 @@ git --version
 gh repo clone estarVN/git-tutorial //use cli
 git@github.com:estarVN/git-tutorial.git // use ssh key
 https://github.com/estarVN/git-tutorial.git // use https
-git clone ...
+git clone https://github.com/estarVN/git-tutorial.git
 
 --or create a new repository on the command line
 echo "# test" >> README.md
