@@ -1,6 +1,6 @@
 https://www.youtube.com/watch?v=cC7vg8lWneo
 
-working folder ========> stage area =======> local repositories ========> remote repositories
+working folder ========> staging area =======> local repositories ========> remote repositories
 
 install git 
 https://git-scm.com/downloads
@@ -27,4 +27,6 @@ git init
 git add filename1 filename2
 git add .
 git status
-git commit -m "comment of this commit"
+git restore --staged filename // to unstage this file 
+git commit -m "add files"
+git log
