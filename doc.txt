@@ -5,6 +5,13 @@ working folder ========> staging area =======> local repositories ========> remo
 install git 
 https://git-scm.com/downloads
 
+git --version
+
+gh repo clone estarVN/git-tutorial //use cli
+git@github.com:estarVN/git-tutorial.git // use ssh key
+https://github.com/estarVN/git-tutorial.git // use https
+git clone ...
+
 --or create a new repository on the command line
 echo "# test" >> README.md
 git init
@@ -30,6 +37,7 @@ git status
 git restore --staged filename // to unstage this file 
 git commit -m "add files"
 git log
+git log -1
 
 git branch
 git checkout -b newbranch1
@@ -47,3 +55,10 @@ git checkout main
 
 git pull // resolve conflict if need and git add to merge
 git push
+
+git pull origin newbranch1
+git push origin newbranch1
+git pull = git fetch + git merge
+
+//resolve conflict :  checkout to new branch if need to resolve conflict
+https://www.youtube.com/watch?v=bfVU7FZaIrY
