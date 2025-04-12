@@ -30,3 +30,20 @@ git status
 git restore --staged filename // to unstage this file 
 git commit -m "add files"
 git log
+
+git branch
+git checkout -b newbranch1
+git checkout newbranch1
+
+git checkout main
+git merge newbranch1
+
+git checkout 8c3f3bcd577861d45ddfe688300a02189713b8d8 //git checkout hash => new branch is created to hash commit
+git branch
+
+git checkout main
+
+.gitignore
+
+git pull // resolve conflict if need and git add to merge
+git push
