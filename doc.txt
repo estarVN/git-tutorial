@@ -44,15 +44,31 @@ git add .
 git status
 git restore --staged filename // to unstage this file 
 git commit -m "add files"
+git commit --amend
 git log
 git log -1
+git log --oneline
 
 git branch
+git branch newbranch
 git checkout -b newbranch1
 git checkout newbranch1
+git branch B2 C1 // new branch will created from current branch
 
 git checkout main
-git merge newbranch1
+git merge newbranch1 //default merge is fast forwading
+git merge B5 --no-ff 
+git branch -d B3 
+
+git rebase 
+
+git checkout main
+git cherry-pick C4
+
+//git reset
+git reset --hard C2
+
+
 
 git checkout 8c3f3bcd577861d45ddfe688300a02189713b8d8 //git checkout hash => new branch is created to hash commit
 git branch
@@ -63,6 +79,7 @@ git checkout main
 
 git pull // resolve conflict if need and git add to merge
 git push
+git push --force
 
 git pull origin newbranch1
 git push origin newbranch1
@@ -71,3 +88,5 @@ git pull = git fetch + git merge
 //resolve conflict :  checkout to new branch if need to resolve conflict
 https://www.youtube.com/watch?v=bfVU7FZaIrY
 
+
+// github => pull requests for review to accept merge
