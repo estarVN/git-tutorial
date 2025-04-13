@@ -62,8 +62,14 @@ git branch -d B3
 
 git rebase 
 
-git checkout main
+https://www.youtube.com/watch?v=0lhtSgkK8SA
+git checkout newdeploy_20250430
 git cherry-pick C4
+git cherry-pick C5 C6 
+git cherry-pick -m 1 --no-commit C7..C10
+git cheery-pick --abort
+git push newdeploy_20250430
+
 
 //git reset
 git reset --hard C2
