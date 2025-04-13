@@ -96,3 +96,5 @@ https://www.youtube.com/watch?v=bfVU7FZaIrY
 
 
 // github => pull requests for review to accept merge
+
+//fork project from company 's repo to your repo for modify, pull resques : owner project have permision to merge
