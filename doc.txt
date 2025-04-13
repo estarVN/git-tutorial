@@ -7,6 +7,14 @@ https://git-scm.com/downloads
 
 git --version
 
+//ssh key 
+https://www.youtube.com/watch?v=pC1s6JOwglE
+
+ssh-keygen -t ed25519 -C "your_email@example.com" //email is registed in github
+
+//If you are using a legacy system that doesn't support the Ed25519 algorithm, use:
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
 gh repo clone estarVN/git-tutorial //use cli
 git@github.com:estarVN/git-tutorial.git // use ssh key
 https://github.com/estarVN/git-tutorial.git // use https
@@ -62,3 +70,4 @@ git pull = git fetch + git merge
 
 //resolve conflict :  checkout to new branch if need to resolve conflict
 https://www.youtube.com/watch?v=bfVU7FZaIrY
+
