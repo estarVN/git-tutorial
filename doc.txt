@@ -20,6 +20,8 @@ git@github.com:estarVN/git-tutorial.git // use ssh key
 https://github.com/estarVN/git-tutorial.git // use https
 git clone https://github.com/estarVN/git-tutorial.git
 
+git remote -v 
+
 --or create a new repository on the command line
 echo "# test" >> README.md
 git init
@@ -48,6 +50,8 @@ git commit --amend
 git log
 git log -1
 git log --oneline
+git log --oneline -n5
+git reflog
 
 git branch
 git branch newbranch
@@ -60,7 +64,11 @@ git merge newbranch1 //default merge is fast forwading
 git merge B5 --no-ff 
 git branch -d B3 
 
-git rebase 
+git commit -m "add task 18"
+git pull 
+git checkout task 18
+git rebase main //get code of branch task 17 in branch main to this branch (branch task 18)
+
 
 https://www.youtube.com/watch?v=0lhtSgkK8SA
 git checkout newdeploy_20250430
@@ -96,3 +104,13 @@ https://www.youtube.com/watch?v=bfVU7FZaIrY
 
 
 // github => pull requests for review to accept merge
+
+//fork project from company 's repo to your repo for modify, after fork to your repo, pull to your local for modify
+//pull resquest : owner project have permision to merge
+
+//1 pull request should have 1 commit
+git commit --amend // merge code change to last commit for purpose 1 pull request should have 1 commit
+push origin new task -f // from 2nd push request
+
+//restore branch was deleted
+git checkout branchnamedeleted
